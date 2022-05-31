@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow: auto;
+    padding: 20px;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/background_header.jpg");
+    background-size: cover;
+    /* background-color: darkcyan; */
+    color: white;
+    font-size: 20px;
+    /* opacity: 0.75; */
+    padding: 100px;
+    text-align: center;
+}
+
+
+nav {
+    background-color: darkcyan;
+    padding: 5px;
+    position: sticky;
+    text-align: center;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+h2, h3 {
+    color: darkcyan;
+}
+
+.content {
+    float: left;
+    width: 70%;
+}
+
+.content p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+p a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    padding-left: 20px;
+    width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+    .content, aside {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.featured-image {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+table {
+    width: 100%;
+}
+
+footer {
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
